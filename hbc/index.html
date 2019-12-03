@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>wryan | HB | C</title>
+    <!-- <link rel="stylesheet" href="./assets/css/hamburgerMenu.css" /> -->
     <link rel="stylesheet" href="./assets/css/hamburgerMenu.css" />
-    <link rel="stylesheet" href="./assets/css/logIn.css">
+    <link rel="stylesheet" href="./assets/css/logIn.css" />
   </head>
   <body>
     <div class="menu-box">
@@ -30,9 +31,63 @@
       </h1>
       <div class="menu-bg" id="menu-bg"></div>
     </div>
-    <div class="log-in">
-        <form action=""></form>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+          <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+        </div>
+        <div class="social-icons">
+          <img src="/img/facebookLogo.png" alt="fb" />
+          <img src="/img/twitterLogo.png" alt="tw" />
+          <img src="/img/untappdLogo.png" alt="un" />
+        </div>
+        <form id="login" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >Forgot Password</span
+          >
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <form id="signup" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >I agree to the terms and conditions</span
+          >
+          <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+      </div>
     </div>
     <script src="/hbc/assets/js/hamburgerMenu.js"></script>
+    <script src="/hbc/assets/js/login.js"></script>
   </body>
 </html>
