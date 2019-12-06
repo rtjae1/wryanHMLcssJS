@@ -76,7 +76,6 @@ h1 {
   right: 0;
   top: 0;
   position: absolute;
-  /* background-color: rgba(38, 84, 133, 0.54); */
   background-color: #e3c186;
   border-radius: 50%;
   z-index: 18;
@@ -126,7 +125,8 @@ h1 {
 .oppenned span:nth-child(2) {
   overflow: visible;
 }
-.oppenned span:nth-child(1), .oppenned span:nth-child(3) {
+.oppenned span:nth-child(1), 
+.oppenned span:nth-child(3) {
   z-index: 100;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
